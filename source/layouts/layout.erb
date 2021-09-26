@@ -31,15 +31,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav list-inline tabs-underlined tabs">
-            <li class="nav-item">
-              <a href="/expertises" class="tab-underlined active">Expertises</a>
+          <ul class="nav navbar-nav list-inline tabs-underlined tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a href="/expertises" class="tab-underlined active" id="expertises-tab" data-bs-toggle="tab" data-bs-target="#expertises" role="tab" aria-controls="expertises" aria-selected="true">Expertises</a>
             </li>
-            <li class="nav-item">
-              <a href="/honoraires" class="tab-underlined">Honoraires</a>
+            <li class="nav-item" role="presentation">
+              <a href="/honoraires" class="tab-underlined" id="honoraires-tab" data-bs-toggle="tab" data-bs-target="#honoraires" aria-controls="honoraires" aria-selected="false" role="tab">Honoraires</a>
             </li>
-            <li class="nav-item">
-              <a href="/contact" class="tab-underlined">Contact</a>
+            <li class="nav-item" role="presentation">
+              <a href="/contact" class="tab-underlined" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab">Contact</a>
             </li>
           </ul>
         </div>
