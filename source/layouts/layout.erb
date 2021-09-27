@@ -33,13 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="nav navbar-nav list-inline tabs-underlined tabs" id="myTab">
             <li class="nav-item" >
-              <a href="expertises" class="tab-underlined"> Expertises</a>
+              <a href="expertises" class="tab-underlined <%= current_page.url == '/expertises/' ? 'active' : '' %>"> Expertises</a>
             </li>
             <li class="nav-item">
-              <a href="honoraires" class="tab-underlined"> Honoraires</a>
+              <a href="honoraires" class="tab-underlined <%= current_page.url == '/honoraires/' ? 'active' : '' %>"> Honoraires</a>
             </li>
             <li class="nav-item">
-              <a href="contact" class="tab-underlined"> Contact</a>
+              <a href="contact" class="tab-underlined <%= current_page.url == '/contact/' ? 'active' : '' %>"> Contact</a>
             </li>
           </ul>
         </div>

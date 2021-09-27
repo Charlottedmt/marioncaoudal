@@ -9,14 +9,14 @@ import bootstrap from 'bootstrap';
 //   })
 // });
 
-var triggerTabList = document.querySelectorAll('#myTab a')
-console.log(triggerTabList);
-triggerTabList.forEach((item) => {
-  item.addEventListener("click", (event)=> {
-    console.log(event.currentTarget);
-    event.currentTarget.classList.add("active");
-  });
-});
+// var triggerTabList = document.querySelectorAll('#myTab a')
+// console.log(triggerTabList);
+// triggerTabList.forEach((item) => {
+//   item.addEventListener("click", (event)=> {
+//     console.log(event.currentTarget);
+//     event.currentTarget.classList.add("active");
+//   });
+// });
 
 // var triggerEl = document.querySelector('#myTab a[href="#profile"]')
 // bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
