@@ -8,15 +8,22 @@ import bootstrap from 'bootstrap';
 //     tabTrigger.show()
 //   })
 // });
-
-// var triggerTabList = document.querySelectorAll('#myTab a')
-// console.log(triggerTabList);
-// triggerTabList.forEach((item) => {
-//   item.addEventListener("click", (event)=> {
-//     console.log(event.currentTarget);
-//     event.currentTarget.classList.add("active");
-//   });
-// });
+if (window.location.pathname == '/') {
+  var triggerTabList = document.querySelectorAll('#myTab a')
+  console.log(triggerTabList);
+  triggerTabList.forEach((item) => {
+    item.addEventListener("mouseover", (event)=> {
+      event.preventDefault();
+      console.log(event.currentTarget);
+      event.currentTarget.classList.add("active");
+    });
+    item.addEventListener("mouseout", (event)=> {
+      event.preventDefault();
+      console.log(event.currentTarget);
+      event.currentTarget.classList.remove("active");
+    });
+  });
+};
 
 // var triggerEl = document.querySelector('#myTab a[href="#profile"]')
 // bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
