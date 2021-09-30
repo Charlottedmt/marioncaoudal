@@ -1,4 +1,4 @@
-import bootstrap from 'bootstrap';
+import bootstrap from "bootstrap";
 
 // var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
 // triggerTabList.forEach(function (triggerEl) {
@@ -8,22 +8,22 @@ import bootstrap from 'bootstrap';
 //     tabTrigger.show()
 //   })
 // });
-if (window.location.pathname == '/') {
-  var triggerTabList = document.querySelectorAll('#myTab a')
+if (window.location.pathname == "/") {
+  var triggerTabList = document.querySelectorAll("#myTab a");
   console.log(triggerTabList);
   triggerTabList.forEach((item) => {
-    item.addEventListener("mouseover", (event)=> {
+    item.addEventListener("mouseover", (event) => {
       event.preventDefault();
       console.log(event.currentTarget);
       event.currentTarget.classList.add("active");
     });
-    item.addEventListener("mouseout", (event)=> {
+    item.addEventListener("mouseout", (event) => {
       event.preventDefault();
       console.log(event.currentTarget);
       event.currentTarget.classList.remove("active");
     });
   });
-};
+}
 
 // var triggerEl = document.querySelector('#myTab a[href="#profile"]')
 // bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
